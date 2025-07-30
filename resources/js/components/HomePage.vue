@@ -115,7 +115,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { ref, onMounted, computed } from 'vue';
 import { useAuthStore } from '../stores/auth';
 import { useServiceStore } from '../stores/services';
