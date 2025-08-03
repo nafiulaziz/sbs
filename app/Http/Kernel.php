@@ -29,10 +29,11 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
-        protected $middlewareAliases = [
-            // ... other middleware
-            'admin' => \App\Http\Middleware\AdminMiddleware::class,
-        ],
+    ];
+    
+    protected $middlewareAliases = [
+        // ... other middleware
+        'admin' => \App\Http\Middleware\AdminMiddleware::class,
     ];
 
     protected $routeMiddleware = [
